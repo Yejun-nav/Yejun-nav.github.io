@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinro Note | 해사 지식 & AI 연구 아카이브</title>
+  <style>
+    :root {
+      --navy: #0a192f;
+      --light-navy: #112240;
+      --slate: #8892b0;
+      --light-slate: #ccd6f6;
+      --accent: #64ffda;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      background-color: var(--navy);
+      color: var(--light-slate);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    header {
+      border-bottom: 1px solid #233554;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+    .tag {
+      color: var(--accent);
+      font-family: monospace;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin: 0 0 12px 0;
+      color: #ffffff;
+    }
+    .subtitle {
+      color: var(--slate);
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background-color: var(--light-navy);
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid #233554;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+    .card p {
+      color: var(--slate);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--slate);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="tag">MARITIME DOMAIN × AI ARCHIVE</span>
+      <h1>Shinro Note (針路ノート)</h1>
+      <p class="subtitle">항해사의 현장 경험과 해사법규, 그리고 AI 기반 선박 조종성능 연구 기록</p>
+    </header>
+
+    <main>
+      <h2>📂 Research & Archive Pillars</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🚢 선박 조종성능 & AI 시뮬레이션</h3>
+          <p>Nomoto·MMG 조종 모델 이해부터 외력(바람·조류·천수효과) 변수를 결합한 선회권 및 피항 경로 예측 실험실</p>
+        </div>
+        <div class="card">
+          <h3>⚖️ 해사법규 & 수험 위키</h3>
+          <p>COLREGs, SOLAS, MARPOL 등 국제협약과 국내 해사법규·형사법 핵심 조문 및 판례 체계화 노트</p>
+        </div>
+        <div class="card">
+          <h3>🧭 해양 안전 & 자율운항 인사이트</h3>
+          <p>브릿지 실무 관점에서 분석한 해양사고 데이터, PSC/Vetting 대응, 자율운항선박(MASS) 기술 비평</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Yejun-nav. Built with GitHub Pages.</p>
+    </footer>
+  </div>
+</body>
+</html>
